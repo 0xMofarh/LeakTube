@@ -36,7 +36,7 @@
   </div>
 
 
-   <h5>1 Download all files</h5>
+   <h5>1 Download Releases file</h5>
    <h5>2 run LeakTube.exe</h5>
    <h5>3 Copy the video link from YouTube</h5>
    <h5>4 Paste the link in the program</h5>
