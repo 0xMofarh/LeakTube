@@ -27,12 +27,14 @@
    <h5>• python 3.11</h5>
    <h5>• pyqt5</h5>
    <h5>• pytube</h5>
-    <div align="center">
-
+  <div align="center">
    <h1>
+
     How to run
   </h1>
-    </div>
+
+  </div>
+
 
    <h5>1 Download all files</h5>
    <h5>2 run LeakTube.exe</h5>
