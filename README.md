@@ -12,9 +12,9 @@
      <h1>
     <img src="image\Screenshot.png" />
   </h1>
-   <h5>• Python Script Download Youtube Video</h5>
+   <h5>• Python Script Download Youtube Video GUI </h5>
    <h5>• Fast Downloading Speed</h5>
-   <h5>• Python Script Download Youtube Video</h5>
+   <h5>• Easy to use</h5>
      <h1>
     Requirements
   </h1>
@@ -35,3 +35,10 @@
      <h5>9 Wait for it to download</h5>
      <h5>10 Done</h5>
 </div>
+ <h1>
+  Author
+</h1>
+     <h5>• Let me know what features you'd like to add or error.</h5>
+     <h5>Discord : leak#2102</h5>
+
+  •Let me know what features you'd like to add or error.
