@@ -18,9 +18,7 @@
 </div>
   <div align="center">
 
-     <h1>
     Requirements
-  </h1>
   </div>
 
    <h5>• python 3.11</h5>
