@@ -5,7 +5,7 @@
   [![Python3](https://img.shields.io/badge/language-Python3-red)](https://img.shields.io/badge/language-Python3-red)
    <h1>
     hey there
-    <img src="image\Screenshot.png" width="30px"/>
+    <img src="https://media.giphy.com/media/mm2LhNygYDsVgdoqwg/giphy.gif" width="30px"/>
   </h1>
   </div>
   <div align="center">
