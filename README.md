@@ -9,5 +9,7 @@
   </h1>
   </div>
   <div align="center">
+     <h1>
     <img src="image\Screenshot.png" />
+  </h1>
   </div>
