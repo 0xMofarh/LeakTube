@@ -1,3 +1,4 @@
+  <div align="center">
    <h1>
     hey there
     <img src="https://media.giphy.com/media/H9VVXzT1LqDS4jDVf5/giphy.gif" width="30px"/>
