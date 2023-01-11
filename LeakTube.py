@@ -7,7 +7,7 @@ from tkinter import filedialog
 from PyQt5.QtGui import QMovie
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
-
+import webbrowser
 class QPyTube(QtCore.QObject):
     initialized = QtCore.pyqtSignal(bool, str)
     download_started = QtCore.pyqtSignal()
@@ -94,6 +94,7 @@ class Ui_Form(QtWidgets.QMainWindow):
         Form.resize(271, 499)
         Form.setMinimumSize(QtCore.QSize(271, 499))
         Form.setMaximumSize(QtCore.QSize(271, 499))
+
         font = QtGui.QFont()
         font.setPointSize(6)
         Form.setFont(font)
@@ -169,7 +170,7 @@ class Ui_Form(QtWidgets.QMainWindow):
         self.label_gif.setStyleSheet("")
         self.label_gif.setText("")
         self.label_gif.setObjectName("label_gif")
-        self.movie = QMovie("q.gif")
+        self.movie = QMovie("image\main.gif")
         self.label_gif.setMovie(self.movie)
         self.startAnimation()
         self.progressBar_downloa_stutus = QtWidgets.QProgressBar(Form)
@@ -193,6 +194,8 @@ class Ui_Form(QtWidgets.QMainWindow):
 "color:#FFF;\n"
 "padding: 0 20 0 20;\n"
 "background-color: rgb(34,36,44);\n"
+"font: 75 9pt \"Terminal\";\n"
+
 "")
         self.res_comboBox.setObjectName("res_comboBox")
         self.res_comboBox.addItem("")
@@ -235,11 +238,12 @@ class Ui_Form(QtWidgets.QMainWindow):
         self._qpytube.download_progress_changed.connect(self.progressBar_downloa_stutus.setValue)
         self._qpytube.download_started.connect(self.handle_download_started)
         self._qpytube.download_finished.connect(self.handle_download_finished)
+
     def show_info_messagebox(self,msgs):
         msg = QMessageBox()
         msg.setIcon(QMessageBox.Information)
         msg.setText(msgs)
-        msg.setWindowTitle("Information MessageBox")
+        msg.setWindowTitle("For You 🖤 .")
         retval = msg.exec_()
 
     @QtCore.pyqtSlot(bool, str)
@@ -249,7 +253,7 @@ class Ui_Form(QtWidgets.QMainWindow):
             self.pushButton_download.setEnabled(True)
         else:
             #self.lbl_error.setText(error)
-            print("error")
+            self.show_info_messagebox("\t\n[ERROR] Error 🐥 . \t\n")
         self.btn_search.setEnabled(True)
 
     def handle_download_clicked(self):
@@ -261,7 +265,8 @@ class Ui_Form(QtWidgets.QMainWindow):
         #self.le_directory.setEnabled(False)
     def handle_download_started(self):
         #self.lbl_error.clear()
-        print("started")
+        self.show_info_messagebox("Started Download ... ^_^")
+
 
     def handle_download_finished(self):
         self.progressBar_downloa_stutus.setValue(100)
@@ -270,13 +275,20 @@ class Ui_Form(QtWidgets.QMainWindow):
         #self.le_directory.setEnabled(True)
         self.show_info_messagebox("Complet Download .. 🎃")
 
+    def about_me(self):
+        url = 'https://github.com/Leakirs/'
+        webbrowser.open_new(url)
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "Form"))
+        Form.setWindowIcon(QtGui.QIcon('image\logo.png'))
+
+        Form.setWindowTitle(_translate("Form", "LeakTube (•_•) ."))
         self.lineEdit_url.setPlaceholderText(_translate("Form", "Enter Url Video "))
         self.pushButton_download.setText(_translate("Form", "Download"))
         self.pushButton_3_about_me.setText(_translate("Form", "About Me"))
-import icons_rc1
+        self.pushButton_3_about_me.clicked.connect(self.about_me)
+
+import icons
 
 
 if __name__ == "__main__":
