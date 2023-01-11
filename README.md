@@ -17,8 +17,11 @@
    <h5>• Easy to use</h5>
 </div>
   <div align="center">
+   <h1>
 
     Requirements
+  </h1>
+
   </div>
 
    <h5>• python 3.11</h5>
@@ -26,7 +29,7 @@
    <h5>• pytube</h5>
     <div align="center">
 
-     <h1>
+   <h1>
     How to run
   </h1>
     </div>
